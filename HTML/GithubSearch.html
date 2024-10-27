@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" 
+          content="width=device-width,
+                    initial-scale=1.0" />
+    <title>
+        Github Search
+    </title>
+</head>
+
+<body>
+    <form class="inputForm" id="userInput">
+        <h1>
+            Github user 1 
+        </h1>
+        <input type="text" 
+        id="inputBox" 
+        autocomplete="off" 
+        placeholder="Search a Github User" />
+    </form>
+    <main id="main"></main>
+    <script src="../JavaScript/GithubSearch.js"></script>
+
+
+    <style>
+        /* styles.css */
+@import url(
+  "https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+form {
+    margin: auto;
+    max-width: 50%;
+    margin-bottom: 20px;
+}
+h1 {
+    color: #00a136;
+    font-size: 2.5rem;
+    margin: auto;
+    text-align: center;
+    text-shadow: 2px 2px 4px
+        rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s
+        ease-in-out;
+}
+h1:hover {
+    transform: scale(1.1);
+}
+
+.inputForm input {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    display: block;
+    background-color: #f0e1c6;
+    border: 2px solid #00a136;
+    border-radius: 7px;
+    color: #333;
+    font-weight: bold;
+    padding: 10px;
+}
+.inputForm input::placeholder {
+    color: #666;
+    font-weight: bold;
+}
+.inputForm input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 5px 10px
+        rgba(0, 0, 0, 0.2);
+}
+.card {
+    max-width: 50%;
+    background-color: rgb(
+        141,
+        240,
+        243
+    );
+    border-radius: 20px;
+    box-shadow: 0 5px 10px
+        rgba(0, 0, 0, 0.1);
+    display: flex;
+    padding: 2rem;
+    margin: auto;
+}
+.avatar {
+    border-radius: 50%;
+    border: 4px solid #00a136;
+    height: 150px;
+    width: 150px;
+    transition: transform 0.3s
+        ease-in-out;
+}
+.avatar:hover {
+    transform: scale(1.1);
+}
+.user-info {
+    color: #333;
+    margin-left: 2rem;
+    padding: 1rem;
+    background-color: rgba(
+        255,
+        255,
+        255,
+        0.9
+    );
+    border-radius: 10px;
+    box-shadow: 0 0 10px
+        rgba(0, 0, 0, 0.2);
+}
+.user-info h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #007bff;
+}
+.user-info p {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+.user-info ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    max-width: 400px;
+    margin-top: 1rem;
+}
+.user-info ul li {
+    display: flex;
+    align-items: center;
+}
+.user-info ul li strong {
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+    color: #007bff;
+}
+.repo {
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff1500;
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+    border-radius: 9px;
+    transition: background-color 0.3s,
+        transform 0.2s;
+}
+.repo:hover {
+    background-color: #cc0c00;
+    transform: scale(1.05);
+}
+@media (max-width: 500px) {
+    .card {
+        flex-direction: column;
+        align-items: center;
+    }
+    .inputForm {
+        max-width: 400px;
+    }
+}
+
+    </style>
+</body>
+
+</html>
